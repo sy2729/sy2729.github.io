@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>MongoDB学习 | 夜郎西</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">MongoDB学习</h1><a id="logo" href="/.">夜郎西</a><p class="description">桃李春风一杯酒，江湖夜雨十年</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">MongoDB学习</h1><div class="post-meta">Jan 1, 2019<span> | </span><span class="category"><a href="/categories/学习/">学习</a></span></div><div class="post-content"><ul>
+<li>mongod - mongo</li>
+<li>mongo dbs</li>
+<li>use xxxx</li>
+<li>show collections</li>
+<li><p>db</p>
+</li>
+<li><p>db.[collection].find().pretty() 可以美化规整展示结果</p>
+</li>
+<li><p>use db不仅可以进入，还可以新建</p>
+</li>
+<li>增： db.user.insert({“name”: “Shuai yuan”})    进行数据插入</li>
+<li>查：db.user.find()      进行查找</li>
+<li>db.user.findOne()     自动返回首个数据</li>
+<li>改：db.user.update(第一个参数为原始数据，第二个为新的数据)</li>
+<li>删： db.user.remove() 删除</li>
+<li><p>db.user.drop()删除整个库 || db.dropDatabase()</p>
+</li>
+<li><p>在 JS中写mongoDB， var db = connect(database的名字)；然后 “mongo 文件名” 运行</p>
+</li>
+<li><p>在terminal中直接载入/运行文件： load(文件路径)</p>
+</li>
+<li><p>update修改器</p>
+</li>
+</ul>
+<ul>
+<li>ObjectId()可以创建一个随机ID并且这个id值有自带的方法getTimestamp()可以查询添加时间</li>
+<li>$gt - greater than</li>
+<li>$gte - greater than or equal</li>
+<li>$lt</li>
+<li>$lte</li>
+<li>$or</li>
+<li>$exists - 接受boolean值</li>
+<li>如果嵌套很多层的数据，可以通过key.key.key…的方式来find得到值</li>
+<li>查询的时候，如果想要查询的结果是数组中的第一个位置，可以这么申明： hobbies.0.name</li>
+<li>使用变量名查询时，一般是{var: value}的形式,其实后面一般不仅可以跟值，还可以跟正则表达式: {$regx: “xiao”}</li>
+<li>对搜索数组长度的限制: {hobbies: {$size: 2}}</li>
+<li>Find等方法的第二个参数：projection，指根据查找数据中的第二个参数部分声明的数据值来显示查找到的数据 - 按需取用，加快查询速度：  {hobbies: 0} - 显示查找到的数据中所有的数据，但是隐藏hobbies部分； {hobbies: 1} - 只显示查找到的数据中hobbies数据，但是隐藏其他数据</li>
+<li>findOneAndUpdate方法第三个参数{new: true} - 返回更新后的文档</li>
+<li>Update方法第三个参数{multi: true}更新多个</li>
+<li>findOneAndUpdate方法第三个参数{upsert: true} - 未找到就插入</li>
+<li><p>find({}).count() - 统计数量</p>
+</li>
+<li><p>Aggregate</p>
+<ul>
+<li>$match</li>
+<li>$group<ul>
+<li>$sum</li>
+<li>$avg</li>
+</ul>
+</li>
+<li>$unwind</li>
+</ul>
+</li>
+</ul>
+</div><div class="tags"><a href="/tags/MongoDB/">MongoDB</a></div><div class="post-nav"><a class="pre" href="/2019/02/08/React踩坑记/">React踩坑记</a><a class="next" href="/2018/10/20/前端面试题/">前端面试题</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://yoursite.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活/">生活</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/杂感/" style="font-size: 15px;">杂感</a> <a href="/tags/职业/" style="font-size: 15px;">职业</a> <a href="/tags/踩坑记/" style="font-size: 15px;">踩坑记</a> <a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/HTML/" style="font-size: 15px;">HTML</a> <a href="/tags/ES6/" style="font-size: 15px;">ES6</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/MongoDB/" style="font-size: 15px;">MongoDB</a> <a href="/tags/Parcel/" style="font-size: 15px;">Parcel</a> <a href="/tags/前端工程化/" style="font-size: 15px;">前端工程化</a> <a href="/tags/React/" style="font-size: 15px;">React</a> <a href="/tags/Riot-js/" style="font-size: 15px;">Riot.js</a> <a href="/tags/Vue-组件化/" style="font-size: 15px;">Vue 组件化</a> <a href="/tags/Vue/" style="font-size: 15px;">Vue</a> <a href="/tags/开发经验/" style="font-size: 15px;">开发经验</a> <a href="/tags/音乐/" style="font-size: 15px;">音乐</a> <a href="/tags/浏览器/" style="font-size: 15px;">浏览器</a> <a href="/tags/面试/" style="font-size: 15px;">面试</a> <a href="/tags/Javascript/" style="font-size: 15px;">Javascript</a> <a href="/tags/JS/" style="font-size: 15px;">JS</a> <a href="/tags/产品/" style="font-size: 15px;">产品</a> <a href="/tags/学习/" style="font-size: 15px;">学习</a> <a href="/tags/转载/" style="font-size: 15px;">转载</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/07/16/再观《机器人总动员》有感/">再观《机器人总动员》有感</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/16/【转】如何设计出一份好的调查问卷？/">【转】如何设计出一份好的调查问卷？</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/08/纽约再见/">纽约再见</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/02/08/React踩坑记/">React踩坑记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/01/MongoDB学习/">MongoDB学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/20/前端面试题/">前端面试题</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/21/Vue踩坑记/">Vue踩坑记</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/web性能优化策略/">web性能优化策略</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/17/JS中实现两种继承-ES5和ES6/">JS中实现两种继承-ES5和ES6</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/13/Vue几种组件通信情况总结/">Vue几种组件通信情况总结</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">夜郎西.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
