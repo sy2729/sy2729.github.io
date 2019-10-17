@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-29T16:10:43.865Z</updated>
+  <updated>2019-10-14T15:17:53.150Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【产品总结】Makeblock 慧编程扩展设计器预设模版功能</title>
+    <link href="http://yoursite.com/2019/10/09/%E3%80%90%E4%BA%A7%E5%93%81%E6%80%BB%E7%BB%93%E3%80%91Makeblock-%E6%85%A7%E7%BC%96%E7%A8%8B%E6%89%A9%E5%B1%95%E8%AE%BE%E8%AE%A1%E5%99%A8%E9%A2%84%E8%AE%BE%E6%A8%A1%E7%89%88%E5%8A%9F%E8%83%BD/"/>
+    <id>http://yoursite.com/2019/10/09/【产品总结】Makeblock-慧编程扩展设计器预设模版功能/</id>
+    <published>2019-10-09T01:56:11.000Z</published>
+    <updated>2019-10-14T15:17:53.150Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="问题背景"><a href="#问题背景" class="headerlink" title="问题背景"></a>问题背景</h2><h3 id="产品介绍"><a href="#产品介绍" class="headerlink" title="产品介绍"></a>产品介绍</h3><p>慧编程扩展设计器是慧编程 mBlock5 配套的扩展设计设计平台。新版的慧编程软件中提供了对大量硬件设备的支持（如 Arduino 系列和程小奔，光环版等一系列Makeblock产品线支持，另外，现在也增加了对大疆编程教育无人机产品 Trello 的支持）和软件上的功能扩展（包括人工智能服务，IOT，语音识别等功能）。这些功能的实现都是依靠一套插件扩展机制：即在慧编程中加载这些扩展，实现对慧编程本身功能的扩展。</p><h3 id="扩展设计器的第三方开发"><a href="#扩展设计器的第三方开发" class="headerlink" title="扩展设计器的第三方开发"></a>扩展设计器的第三方开发</h3><p>扩展设计器之所以有这样的丰富的扩展生态，离不开官方在扩展开发上的投入，以领头的姿态展示了扩展的潜力；其次，也离不开大量第三方开发者的踊跃参与。在 mBlock3 版本时代，扩展数量达到了400余个。</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/10/10/4a9d00c0-eb5d-11e9-989a-13055d395bfb.png" alt="image.png"></p><p><center><small>mBlock3 时期扩展的添加界面</small><center></center></center></p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/10/10/cc9c44f0-eb5d-11e9-989a-13055d395bfb.png" alt="image.png"></p><p><center><small>mBlock5 时期扩展的添加界面</small><center></center></center></p><p>Makeblock于2019年6月推出了扩展设计器产品，改变了扩展编写的方式。</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/10/10/4846bf40-eb5e-11e9-989a-13055d395bfb.png" alt="image.png"></p><p><center><small>扩展设计器</small><center></center></center></p><p>mBlock5 和 mBlock3 的扩展开发、加载和发布方式有很大的不同，也有了更多的优点。</p><ul><li><p>扩展质量得到保证<br>mBlock3 通过本地编写代码，上传至Github统一收录到官方扩展地址，然后发放至客户端扩展添加页面。而 mBlock5 则通过在扩展设计器中提交扩展，官方后台进行测试后才能上线，扩展的可用性和质量得到一定的保障；</p></li><li><p>扩展编写的成本降低<br>mBlock3 时期编写扩展需要通过本地代码编写，了解复杂的配置项，从而实现扩展编写；而 mBlock5 的扩展设计器只需要通过在线系统的配置+部分代码的填写就可以实现扩展的创造且支持多语言化。</p></li><li><p>扩展管理方便<br>mBlock3 时期扩展的代码数据都是在用户本地保存然后上传到Github上进行更新；但是 mBlock5 可以直接在系统中进行扩展数据更新然后提交更新审核，非常方便。随时随地修改使用，实现云端服务。</p></li></ul><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/10/10/2f9f8f30-eb5e-11e9-989a-13055d395bfb.png" alt="image.png"></p><p><center><small>扩展设计器中的扩展管理列表</small><center></center></center></p><h3 id="产品定位和目标"><a href="#产品定位和目标" class="headerlink" title="产品定位和目标"></a>产品定位和目标</h3><p>慧编程扩展设计器提供如此强大的扩展编写功能，主要是为了吸引更多的慧编程使用者和扩展开发者使用 mBlock5。其中一部分是吸引新用户，包括从使用 makeblock 硬件和慧编程支持的非makeblock硬件的玩家（如Arduino），另一部分是吸引来自 mBlock3 的旧用户（旧用户在几年的时间中已经积累了超过950万的用户，而 mBlock5 目前只有50万）。因此，慧编程扩展设计器的主要的产品目标是<strong>提升慧编程 mBlock 的用户量</strong>和<strong>辅助提升 mBlock 在编程软件界的影响力</strong>。</p><h3 id="我的工作"><a href="#我的工作" class="headerlink" title="我的工作"></a>我的工作</h3><p>我目前在慧编程扩展设计器的迭代过程了负责了以下几个方面的工作</p><h4 id="1-Arduino-预设模版功能上线"><a href="#1-Arduino-预设模版功能上线" class="headerlink" title="1.Arduino 预设模版功能上线"></a>1.Arduino 预设模版功能上线</h4><p>Arduino 爱好者占据了相当一部分 mBlock3 的用户量，mBlock3 的茁壮成长也离不开Arduino用户的支持。因此，扶持 Arduino 用户是 mBlock5 产品发展的一个重要环节。</p><p>但是扩展设计器有着相当复杂的功能设计（特别是对于刚接触扩展开发的学习者），功能设计又相当的细化，细化到可以控制积木的每一个颜色，控制积木之间的距离，积木的转码规则等等。因此，我们收到的许多用户反馈都是扩展设计器学习成本极高，使用困难。</p><p>因此，在一系列调查和研究之后，我们决定针对目前扩展数量最多的 Arduino 扩展类型，开发 Arduino 预设模版，帮助用户快速创造 Arduino 扩展。</p><p>首先是梳理出扩展开发的用户路线图：</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/10/14/b9e10360-ee95-11e9-a621-9b422f8187ff.png" alt="image.png"></p><p><center><small>用户开发扩展的流程</small><center></center></center></p><p>此次迭代主要分为四点：</p><p>  1、信息结构调整：根据当前扩展模板开发的需要，将一些基础的、常用的扩展设置项排在前面，方便用户填写</p><p>  2、简化信息：根据当前扩展模板开发的需要，帮用户预设或自动生成一些信息字段，免去用户多余的信息填写——默认填充、简化步骤，减少认知负担</p><p>  3、折叠信息：根据当前扩展模板开发的需要，将一些不常用的字段信息配置折叠到高级功能项中，免去用户多余的信息干扰</p><p>  4、优化文案和增加提示：减少技术用语，尽量使用易懂的概念</p><p>扩展设计器Arduino预设开发模版产品结构图: <a href="https://www.processon.com/view/link/5d637fd6e4b08b95b82bee42" target="_blank" rel="noopener">https://www.processon.com/view/link/5d637fd6e4b08b95b82bee42</a></p><p>扩展设计器Arduino预设开发模版产品原型图： <a href="https://org.modao.cc/app/ccbqztkdhxfjzqxl8ltf777cus2dh8" target="_blank" rel="noopener">https://org.modao.cc/app/ccbqztkdhxfjzqxl8ltf777cus2dh8</a></p><p>扩展设计器Arduino预设开发模版产品页面结构：<a href="https://overflow.io/s/BQ391X" target="_blank" rel="noopener">https://overflow.io/s/BQ391X</a></p><h4 id="2-mBlock-V3-扩展移植到-mBlock-V5"><a href="#2-mBlock-V3-扩展移植到-mBlock-V5" class="headerlink" title="2. mBlock V3 扩展移植到 mBlock V5"></a>2. mBlock V3 扩展移植到 mBlock V5</h4><p>之前的背景中提到了mBlock 3拥有400+的扩展量，这导致mBlock 3具有较强的用户粘性，某种程度上阻碍了mBlock 5的推广。因为我们考虑将这些扩展移植到新的平台上，同时吸引这批扩展的忠实用户也转移到新的平台上。</p><p>我们有一套移植扩展的脚本，通过对某些参数的修改和JSON文件的配置，可以直接mBlock 3扩展代码文件对接到mBlock 5上。但是这背后有更多的事情需要考虑：</p><ul><li>两个版本的扩展数据分别有哪些内容，有哪些差异？</li><li>原来的扩展文件信息中有哪些数据（字段）是现在扩展没有的，怎么处理这批数据，是删除还是保存？</li><li>现在的扩展信息中是否新增了一些字段，那么移植过来的扩展信息中没有，怎么处理，默认为多少？</li><li>在现有扩展数量只有不到50的情况下，“扩展中心”在新增400个扩展之后，数据加载速度有影响吗？扩展中心的扩展展示排列方式是否合理？是否需要做分页功能？</li><li>在增加400+扩展之后，“扩展中心”如何方便用户更加便捷地找到需要的扩展？需要做检索功能吗？检索是查询扩展名字段还是扩展描述字段？针对不同语言的扩展，检索时是否对应检索其字段翻译语言？检索结果按照什么顺序显示？未有检索结果时显示什么？</li><li>新增的扩展可能存在功能问题无法使用，是否会影响扩展平台质量维度的用户印象，是否可以通过分类和评分机制区分官方扩展和第三方扩展，以及扩展质量的优劣？</li></ul><p>因此，为了应对扩展增加之后的情况，我们在慧编程IDE扩展中心增加了检索功能和分页功能，帮助用户更好地浏览和寻找扩展。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>MakeBlock香港书展一日之旅</title>
@@ -73,7 +94,7 @@
     <published>2019-07-16T15:58:59.000Z</published>
     <updated>2019-07-20T12:17:44.305Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>这部电影看过很多遍了，高中的时候一遍，后来大学看过两遍，现在公司组织管培生去看电影，又是一遍。</p>    <div id="aplayer-eOcYkxjD" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2005760" data-server="netease" data-type="song" data-mode="circulation" " data-autoplay="true" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div><p>第一次看的那种感动仍然还在，机器和机器之间单纯直接的情感反衬出对环境的人文反思，对人类世界麻木的无情嘲讽，好在影片是少儿向，寓意在于给人美好的希望和教育意义，并没有揭示仅凭一株植物就断定地球生态环境的恢复，可以居住，并贸然带领所有仅存的人类回到地球的行为是多么不合情理，也没有着重篇幅暗示人类回到地球之后面对满目疮痍的地球可能需要付出怎样努力才能开疆拓土。但是轻松的剧情之下依然潜伏着很多可怕的秘密。</p><p><img src="http://thelibertycaucus.com/wp-content/uploads/2014/06/DI-Walle-1-DI-to-L10.jpg" alt="瓦力和伊娃"></p><p>船长在和机器人代理舵手争辩时，偶然一眼扫见历代船长和舵手的合影。这是一个意味深长的镜头，历代合影中，船长身后的机器人舵手随着每一代船长的传承距离船长的越来越近，到最后几乎贴着船长的后背 ，占据照片的一半的篇幅，大有取代人类船长之势。这其实早为舵手的叛变埋下了伏笔。那就是机器人随时时间的流逝和科技的发展逐渐有了自己的意识，并且想要开始制衡人类。</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/07/20/b483e0b0-aacd-11e9-99b9-492b08b233ee.jpg" alt="肥胖如猪的船长"></p><p>影片中的大多数机器人都是只会按照规章制度执行指令的机器——乍一看我们会以为是这样，然而影片结尾处面对伊娃和瓦利恋情的公开，一大堆飞船上的机器人“战友”急匆匆冲过来又赶紧不当电灯泡躲起来，这一幕已经体现了机器人很大程度上实际拥有人类的各种微妙的情绪和思想。</p><p>而我实现无法想象拥有如此智能的机器人，在拥有强大功能和生命力的同时（连最低级的垃圾处理机器人瓦力都可以通过太阳能为自己无限续命，通过更换零件实现永生），为什么需要向人类臣服。而此时的人类在飞船上已然成为了被豢养的机器人的”宠物猪“，终日沉浸在机器所营造的美好幻梦之中，穿着统一的制服，永远喝着一样的饮料，过着古人一般日出而作，日落而息的生活（然而这个日的规则和时间却由机器所掌控），看着眼前虚拟的屏幕和其他人类社交（却无法感知身边活生生的同胞），肥胖得只能通过椅子行动——甚至有可能从出生到老死终日未曾离开过自己的椅子。这样看来，人类面对机器人实则未有半分胜算，而最后却只因船长关掉舵手的开关而取得胜利，未免太过牵强。而我认为舵手对船长回归地球意图的反抗断然不仅是因为登船之初总统所下达的不得返回地球的秘密指令，而或许是其早已产生智能，想通过继续将人类禁锢在飞船之上，而达到另一些不为人所知的目的。</p><p>整部影片没有显示出人类的任何智慧。比如制造机器人的科学家在哪儿？人类看似拥有如此的高科技，可是普通的人民却如此臃肿，娱乐至死。那么是什么资本让人类亲手毁灭了地球，进入太空之后却仍旧能够不用付出任何代价享受这样的生活？电影对此没有任何交代。想必是考虑电影的风格，对于我等阴谋说的剧情不想过多交代否则影响这部面向小孩的电影美好性。但是个人认为，作为一个成人观看这部电影，是很有必要思考这些可能的“阴谋”的。</p><p>整部影片的反讽意味明确，人类过分依赖科技，导致自身智慧甚至体态的退化，出现反向进化的趋势；而另一头，日趋智能的机器人却在服侍、服务人类的时候碰撞出了爱情和人性。看似荒诞的情节实际背后充满对人类未来的担忧。</p><p>说回现在。公司所做的mBot的长相与剧中的Wall-E有几分相似，可想而知Jasen在创建公司初期怀揣的梦想就是能够有一天至少还原出Wall-E这类级别机器人的。但目前来看，我们的年代所掌握的技术离这类机器人还有不短距离。</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/07/20/d007cae0-aacd-11e9-99b9-492b08b233ee.jpg" alt="Wall-E"></p><p>总之，这部剧让我明白，人类不过是众多生物中平凡的一类。如果以为科技的发展能让我们高枕无忧什么也不用做，那只会更快地走向灭亡和被淘汰。个人比较悲观，所以也会有这种危机感，很多人看到这部电影所讲述的机器人的美好，我只看到这部电影中人类的悲惨命运，真的回到地球就能幸福快了吗，已经产生智慧的机器人，真的能与人和平共处吗？</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>这部电影看过很多遍了，高中的时候一遍，后来大学看过两遍，现在公司组织管培生去看电影，又是一遍。</p>    <div id="aplayer-mOHxXYuX" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2005760" data-server="netease" data-type="song" data-mode="circulation" " data-autoplay="true" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div><p>第一次看的那种感动仍然还在，机器和机器之间单纯直接的情感反衬出对环境的人文反思，对人类世界麻木的无情嘲讽，好在影片是少儿向，寓意在于给人美好的希望和教育意义，并没有揭示仅凭一株植物就断定地球生态环境的恢复，可以居住，并贸然带领所有仅存的人类回到地球的行为是多么不合情理，也没有着重篇幅暗示人类回到地球之后面对满目疮痍的地球可能需要付出怎样努力才能开疆拓土。但是轻松的剧情之下依然潜伏着很多可怕的秘密。</p><p><img src="http://thelibertycaucus.com/wp-content/uploads/2014/06/DI-Walle-1-DI-to-L10.jpg" alt="瓦力和伊娃"></p><p>船长在和机器人代理舵手争辩时，偶然一眼扫见历代船长和舵手的合影。这是一个意味深长的镜头，历代合影中，船长身后的机器人舵手随着每一代船长的传承距离船长的越来越近，到最后几乎贴着船长的后背 ，占据照片的一半的篇幅，大有取代人类船长之势。这其实早为舵手的叛变埋下了伏笔。那就是机器人随时时间的流逝和科技的发展逐渐有了自己的意识，并且想要开始制衡人类。</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/07/20/b483e0b0-aacd-11e9-99b9-492b08b233ee.jpg" alt="肥胖如猪的船长"></p><p>影片中的大多数机器人都是只会按照规章制度执行指令的机器——乍一看我们会以为是这样，然而影片结尾处面对伊娃和瓦利恋情的公开，一大堆飞船上的机器人“战友”急匆匆冲过来又赶紧不当电灯泡躲起来，这一幕已经体现了机器人很大程度上实际拥有人类的各种微妙的情绪和思想。</p><p>而我实现无法想象拥有如此智能的机器人，在拥有强大功能和生命力的同时（连最低级的垃圾处理机器人瓦力都可以通过太阳能为自己无限续命，通过更换零件实现永生），为什么需要向人类臣服。而此时的人类在飞船上已然成为了被豢养的机器人的”宠物猪“，终日沉浸在机器所营造的美好幻梦之中，穿着统一的制服，永远喝着一样的饮料，过着古人一般日出而作，日落而息的生活（然而这个日的规则和时间却由机器所掌控），看着眼前虚拟的屏幕和其他人类社交（却无法感知身边活生生的同胞），肥胖得只能通过椅子行动——甚至有可能从出生到老死终日未曾离开过自己的椅子。这样看来，人类面对机器人实则未有半分胜算，而最后却只因船长关掉舵手的开关而取得胜利，未免太过牵强。而我认为舵手对船长回归地球意图的反抗断然不仅是因为登船之初总统所下达的不得返回地球的秘密指令，而或许是其早已产生智能，想通过继续将人类禁锢在飞船之上，而达到另一些不为人所知的目的。</p><p>整部影片没有显示出人类的任何智慧。比如制造机器人的科学家在哪儿？人类看似拥有如此的高科技，可是普通的人民却如此臃肿，娱乐至死。那么是什么资本让人类亲手毁灭了地球，进入太空之后却仍旧能够不用付出任何代价享受这样的生活？电影对此没有任何交代。想必是考虑电影的风格，对于我等阴谋说的剧情不想过多交代否则影响这部面向小孩的电影美好性。但是个人认为，作为一个成人观看这部电影，是很有必要思考这些可能的“阴谋”的。</p><p>整部影片的反讽意味明确，人类过分依赖科技，导致自身智慧甚至体态的退化，出现反向进化的趋势；而另一头，日趋智能的机器人却在服侍、服务人类的时候碰撞出了爱情和人性。看似荒诞的情节实际背后充满对人类未来的担忧。</p><p>说回现在。公司所做的mBot的长相与剧中的Wall-E有几分相似，可想而知Jasen在创建公司初期怀揣的梦想就是能够有一天至少还原出Wall-E这类级别机器人的。但目前来看，我们的年代所掌握的技术离这类机器人还有不短距离。</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/07/20/d007cae0-aacd-11e9-99b9-492b08b233ee.jpg" alt="Wall-E"></p><p>总之，这部剧让我明白，人类不过是众多生物中平凡的一类。如果以为科技的发展能让我们高枕无忧什么也不用做，那只会更快地走向灭亡和被淘汰。个人比较悲观，所以也会有这种危机感，很多人看到这部电影所讲述的机器人的美好，我只看到这部电影中人类的悲惨命运，真的回到地球就能幸福快了吗，已经产生智慧的机器人，真的能与人和平共处吗？</p>]]></content>
     
     <summary type="html">
     
@@ -125,7 +146,7 @@
     <published>2019-06-08T02:59:11.000Z</published>
     <updated>2019-07-20T15:11:18.629Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>    <div id="aplayer-rPnleQWi" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="16328033" data-server="netease" data-type="song" data-mode="circulation" " data-autoplay="true" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div><p>他们说纽约是一个非常有包容性的城市，各种文化、美食、民族、阶层，无不在这里有自己一方净土。可是我自己仍然觉得这个城市太快，太碎，太不符合自己对于安居乐业的居住地的想象。</p><p>终于收拾好了包裹，向居住了一年的Ubry小区道别。</p><p>当初搬过来的时候憧憬着自己之后如何一个人在这美好的小区学习，奋斗，升职，加薪。现在回想，觉得有些天真了，没有经历大风大浪的避世隐居，是禁不住世间诱惑，难关，酸甜苦辣的考验的。</p><p>我可能会或不会在将来怀念这一段孤独而痛苦的时光，但一定会感谢他渐渐帮我拨开迷雾，指引自己矫正之前偏离的轨迹。</p><p>再见，纽约。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>    <div id="aplayer-JnLDWhna" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="16328033" data-server="netease" data-type="song" data-mode="circulation" " data-autoplay="true" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div><p>他们说纽约是一个非常有包容性的城市，各种文化、美食、民族、阶层，无不在这里有自己一方净土。可是我自己仍然觉得这个城市太快，太碎，太不符合自己对于安居乐业的居住地的想象。</p><p>终于收拾好了包裹，向居住了一年的Ubry小区道别。</p><p>当初搬过来的时候憧憬着自己之后如何一个人在这美好的小区学习，奋斗，升职，加薪。现在回想，觉得有些天真了，没有经历大风大浪的避世隐居，是禁不住世间诱惑，难关，酸甜苦辣的考验的。</p><p>我可能会或不会在将来怀念这一段孤独而痛苦的时光，但一定会感谢他渐渐帮我拨开迷雾，指引自己矫正之前偏离的轨迹。</p><p>再见，纽约。</p>]]></content>
     
     <summary type="html">
     
@@ -498,31 +519,6 @@
     
     
       <category term="开发经验" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BFC块级格式化上下文学习笔记</title>
-    <link href="http://yoursite.com/2018/03/17/BFC%E5%9D%97%E7%BA%A7%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/03/17/BFC块级格式化上下文学习笔记/</id>
-    <published>2018-03-17T02:29:44.000Z</published>
-    <updated>2019-07-20T11:53:00.071Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>跟定位，浮动，布局等问题类似，CSS中除了这些难点重点之外还存在一个常被面试官提起的知识点——BFC。但是对此很多人存在争议，BFC真的是重点吗？从我学习的感受来看，BFC由于建立在对浮动所带来的副作用的理解基础上，目前只能算难点，但是实际应用来看，由于其自身也会带来额外的副作用（除非用并未得到所有浏览器支持的属性<code>display: flow-root</code>实现），其实用价值并不足以使其成为重点。但无论如何，它都是面试的一个重点。</p><p>了解BFC的主要两点：</p><h2 id="BFC定义"><a href="#BFC定义" class="headerlink" title="BFC定义"></a>BFC定义</h2><h5 id="CSS规范中对-BFC-的描述"><a href="#CSS规范中对-BFC-的描述" class="headerlink" title="CSS规范中对 BFC 的描述"></a>CSS规范中对 BFC 的描述</h5><figure class="highlight nsis"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9.4</span>.<span class="number">1</span> 块格式化上下文</span><br><span class="line"></span><br><span class="line">浮动，绝对定位元素，非块盒的块容器（例如，inline-blocks，table-cells和table-captions）和<span class="string">'overflow'</span>不为<span class="string">'visible'</span>的块盒会为它们的内容建立一个新的块格式化上下文</span><br><span class="line"></span><br><span class="line">在一个块格式化上下文中，盒在竖直方向一个接一个地放置，从包含块的顶部开始。两个兄弟盒之间的竖直距离由<span class="string">'margin'</span>属性决定。同一个块格式化上下文中的相邻块级盒之间的竖直margin会合并</span><br><span class="line"></span><br><span class="line">在一个块格式化上下文中，每个盒的<span class="literal">left</span>外边（<span class="literal">left</span> outer edge）挨着包含块的<span class="literal">left</span>边（对于从右向左的格式化，<span class="literal">right</span>边挨着）。即使存在浮动（尽管一个盒的行盒可能会因为浮动收缩），这也成立。除非该盒建立了一个新的块格式化上下文（这种情况下，该盒自身可能会因为浮动变窄）</span><br></pre></td></tr></table></figure><h2 id="BFC功能"><a href="#BFC功能" class="headerlink" title="BFC功能"></a>BFC功能</h2><p>（1）管理内部子元素<br>        让不受管理（包不住）的子元素接受管理<br>        让父元素浮动／绝对定位／变成不是block的block（inline-block、table-cell，table-caption）／非overflow：visible／display：flow-root(最新标准，作用是仅处罚BFC且不带来任何多余效果，但浏览器支持有限)</p><p>(2）使子元素们的竖直margin合并</p><pre><code>*但是此BFC不会管其子元素创建的新BFC中的子元素（包不住孙元素），    如果BFC2不管孙元素，那么BFC就要管孙元素，反之则反，例如：    `    BFC      -子元素／BFC2        -孙元素    `</code></pre><p>（3）让内部元素和外部元素划清界限／兄弟之间划清界限</p><p>*总结：BFC能和清除浮动实现一样的效果，但是可能带来额外的副作用，而不带来副作用的纯制造BFC的样式<code>display： flow-root</code>目前又存在浏览器兼容问题。所以BFC是时代的产物，一般情况下不用。在某些情况下，当子元素想要穿透父元素时，也可以用border-top属性来替代BFC</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
     
   </entry>
   

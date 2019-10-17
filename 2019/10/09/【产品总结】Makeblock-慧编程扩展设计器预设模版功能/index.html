@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>【产品总结】Makeblock 慧编程扩展设计器预设模版功能 | 夜郎西</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">【产品总结】Makeblock 慧编程扩展设计器预设模版功能</h1><a id="logo" href="/.">夜郎西</a><p class="description">桃李春风一杯酒，江湖夜雨十年</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/microBlog/"><i class="fa fa-user"> 微博</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">【产品总结】Makeblock 慧编程扩展设计器预设模版功能</h1><div class="post-meta">Oct 9, 2019</div><a class="disqus-comment-count" href="/2019/10/09/【产品总结】Makeblock-慧编程扩展设计器预设模版功能/#vcomment"><span class="valine-comment-count" data-xid="/2019/10/09/【产品总结】Makeblock-慧编程扩展设计器预设模版功能/"></span><span> 条评论</span></a><div class="post-content"><h2 id="问题背景"><a href="#问题背景" class="headerlink" title="问题背景"></a>问题背景</h2><h3 id="产品介绍"><a href="#产品介绍" class="headerlink" title="产品介绍"></a>产品介绍</h3><p>慧编程扩展设计器是慧编程 mBlock5 配套的扩展设计设计平台。新版的慧编程软件中提供了对大量硬件设备的支持（如 Arduino 系列和程小奔，光环版等一系列Makeblock产品线支持，另外，现在也增加了对大疆编程教育无人机产品 Trello 的支持）和软件上的功能扩展（包括人工智能服务，IOT，语音识别等功能）。这些功能的实现都是依靠一套插件扩展机制：即在慧编程中加载这些扩展，实现对慧编程本身功能的扩展。</p>
+<h3 id="扩展设计器的第三方开发"><a href="#扩展设计器的第三方开发" class="headerlink" title="扩展设计器的第三方开发"></a>扩展设计器的第三方开发</h3><p>扩展设计器之所以有这样的丰富的扩展生态，离不开官方在扩展开发上的投入，以领头的姿态展示了扩展的潜力；其次，也离不开大量第三方开发者的踊跃参与。在 mBlock3 版本时代，扩展数量达到了400余个。</p>
+<p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/10/10/4a9d00c0-eb5d-11e9-989a-13055d395bfb.png" alt="image.png"></p>
+<p><center><small>mBlock3 时期扩展的添加界面</small><center></center></center></p>
+<p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/10/10/cc9c44f0-eb5d-11e9-989a-13055d395bfb.png" alt="image.png"></p>
+<p><center><small>mBlock5 时期扩展的添加界面</small><center></center></center></p>
+<p>Makeblock于2019年6月推出了扩展设计器产品，改变了扩展编写的方式。</p>
+<p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/10/10/4846bf40-eb5e-11e9-989a-13055d395bfb.png" alt="image.png"></p>
+<p><center><small>扩展设计器</small><center></center></center></p>
+<p>mBlock5 和 mBlock3 的扩展开发、加载和发布方式有很大的不同，也有了更多的优点。</p>
+<ul>
+<li><p>扩展质量得到保证<br>mBlock3 通过本地编写代码，上传至Github统一收录到官方扩展地址，然后发放至客户端扩展添加页面。而 mBlock5 则通过在扩展设计器中提交扩展，官方后台进行测试后才能上线，扩展的可用性和质量得到一定的保障；</p>
+</li>
+<li><p>扩展编写的成本降低<br>mBlock3 时期编写扩展需要通过本地代码编写，了解复杂的配置项，从而实现扩展编写；而 mBlock5 的扩展设计器只需要通过在线系统的配置+部分代码的填写就可以实现扩展的创造且支持多语言化。</p>
+</li>
+<li><p>扩展管理方便<br>mBlock3 时期扩展的代码数据都是在用户本地保存然后上传到Github上进行更新；但是 mBlock5 可以直接在系统中进行扩展数据更新然后提交更新审核，非常方便。随时随地修改使用，实现云端服务。</p>
+</li>
+</ul>
+<p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/10/10/2f9f8f30-eb5e-11e9-989a-13055d395bfb.png" alt="image.png"></p>
+<p><center><small>扩展设计器中的扩展管理列表</small><center></center></center></p>
+<h3 id="产品定位和目标"><a href="#产品定位和目标" class="headerlink" title="产品定位和目标"></a>产品定位和目标</h3><p>慧编程扩展设计器提供如此强大的扩展编写功能，主要是为了吸引更多的慧编程使用者和扩展开发者使用 mBlock5。其中一部分是吸引新用户，包括从使用 makeblock 硬件和慧编程支持的非makeblock硬件的玩家（如Arduino），另一部分是吸引来自 mBlock3 的旧用户（旧用户在几年的时间中已经积累了超过950万的用户，而 mBlock5 目前只有50万）。因此，慧编程扩展设计器的主要的产品目标是<strong>提升慧编程 mBlock 的用户量</strong>和<strong>辅助提升 mBlock 在编程软件界的影响力</strong>。</p>
+<h3 id="我的工作"><a href="#我的工作" class="headerlink" title="我的工作"></a>我的工作</h3><p>我目前在慧编程扩展设计器的迭代过程了负责了以下几个方面的工作</p>
+<h4 id="1-Arduino-预设模版功能上线"><a href="#1-Arduino-预设模版功能上线" class="headerlink" title="1.Arduino 预设模版功能上线"></a>1.Arduino 预设模版功能上线</h4><p>Arduino 爱好者占据了相当一部分 mBlock3 的用户量，mBlock3 的茁壮成长也离不开Arduino用户的支持。因此，扶持 Arduino 用户是 mBlock5 产品发展的一个重要环节。</p>
+<p>但是扩展设计器有着相当复杂的功能设计（特别是对于刚接触扩展开发的学习者），功能设计又相当的细化，细化到可以控制积木的每一个颜色，控制积木之间的距离，积木的转码规则等等。因此，我们收到的许多用户反馈都是扩展设计器学习成本极高，使用困难。</p>
+<p>因此，在一系列调查和研究之后，我们决定针对目前扩展数量最多的 Arduino 扩展类型，开发 Arduino 预设模版，帮助用户快速创造 Arduino 扩展。</p>
+<p>首先是梳理出扩展开发的用户路线图：</p>
+<p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/10/14/b9e10360-ee95-11e9-a621-9b422f8187ff.png" alt="image.png"></p>
+<p><center><small>用户开发扩展的流程</small><center></center></center></p>
+<p>此次迭代主要分为四点：</p>
+<p>  1、信息结构调整：根据当前扩展模板开发的需要，将一些基础的、常用的扩展设置项排在前面，方便用户填写</p>
+<p>  2、简化信息：根据当前扩展模板开发的需要，帮用户预设或自动生成一些信息字段，免去用户多余的信息填写——默认填充、简化步骤，减少认知负担</p>
+<p>  3、折叠信息：根据当前扩展模板开发的需要，将一些不常用的字段信息配置折叠到高级功能项中，免去用户多余的信息干扰</p>
+<p>  4、优化文案和增加提示：减少技术用语，尽量使用易懂的概念</p>
+<p>扩展设计器Arduino预设开发模版产品结构图: <a href="https://www.processon.com/view/link/5d637fd6e4b08b95b82bee42" target="_blank" rel="noopener">https://www.processon.com/view/link/5d637fd6e4b08b95b82bee42</a></p>
+<p>扩展设计器Arduino预设开发模版产品原型图： <a href="https://org.modao.cc/app/ccbqztkdhxfjzqxl8ltf777cus2dh8" target="_blank" rel="noopener">https://org.modao.cc/app/ccbqztkdhxfjzqxl8ltf777cus2dh8</a></p>
+<p>扩展设计器Arduino预设开发模版产品页面结构：<a href="https://overflow.io/s/BQ391X" target="_blank" rel="noopener">https://overflow.io/s/BQ391X</a></p>
+<h4 id="2-mBlock-V3-扩展移植到-mBlock-V5"><a href="#2-mBlock-V3-扩展移植到-mBlock-V5" class="headerlink" title="2. mBlock V3 扩展移植到 mBlock V5"></a>2. mBlock V3 扩展移植到 mBlock V5</h4><p>之前的背景中提到了mBlock 3拥有400+的扩展量，这导致mBlock 3具有较强的用户粘性，某种程度上阻碍了mBlock 5的推广。因为我们考虑将这些扩展移植到新的平台上，同时吸引这批扩展的忠实用户也转移到新的平台上。</p>
+<p>我们有一套移植扩展的脚本，通过对某些参数的修改和JSON文件的配置，可以直接mBlock 3扩展代码文件对接到mBlock 5上。但是这背后有更多的事情需要考虑：</p>
+<ul>
+<li>两个版本的扩展数据分别有哪些内容，有哪些差异？</li>
+<li>原来的扩展文件信息中有哪些数据（字段）是现在扩展没有的，怎么处理这批数据，是删除还是保存？</li>
+<li>现在的扩展信息中是否新增了一些字段，那么移植过来的扩展信息中没有，怎么处理，默认为多少？</li>
+<li>在现有扩展数量只有不到50的情况下，“扩展中心”在新增400个扩展之后，数据加载速度有影响吗？扩展中心的扩展展示排列方式是否合理？是否需要做分页功能？</li>
+<li>在增加400+扩展之后，“扩展中心”如何方便用户更加便捷地找到需要的扩展？需要做检索功能吗？检索是查询扩展名字段还是扩展描述字段？针对不同语言的扩展，检索时是否对应检索其字段翻译语言？检索结果按照什么顺序显示？未有检索结果时显示什么？</li>
+<li>新增的扩展可能存在功能问题无法使用，是否会影响扩展平台质量维度的用户印象，是否可以通过分类和评分机制区分官方扩展和第三方扩展，以及扩展质量的优劣？</li>
+</ul>
+<p>因此，为了应对扩展增加之后的情况，我们在慧编程IDE扩展中心增加了检索功能和分页功能，帮助用户更好地浏览和寻找扩展。</p>
+</div><iframe src="/donate/?AliPayQR=null&amp;WeChatQR=/img/wechat_pay.png&amp;GitHub=null&amp;BTCQR=null&amp;BTCKEY=null&amp;PayPal=null" style="overflow-x:hidden; overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;" frameborder="0" scrolling="no"></iframe><div class="tags"></div><div class="post-nav"><a class="next" href="/2019/07/30/MakeBlock香港书展一日之旅/">MakeBlock香港书展一日之旅</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' ? true : false;
+var verify = 'true' ? true : false;
+//- var visitor = '' ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  //- visitor:visitor,
+  appId:'OQJG9lVH5nUN9qTkztUC0kFd-MdYXbMMI',
+  appKey:'hc5kLjIHhDBynEFr4MAT3QUA',
+  placeholder:'请留下您的足迹吧',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'15'
+})</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://yoursite.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活/">生活</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/杂感/" style="font-size: 15px;">杂感</a> <a href="/tags/职业/" style="font-size: 15px;">职业</a> <a href="/tags/踩坑记/" style="font-size: 15px;">踩坑记</a> <a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/ES6/" style="font-size: 15px;">ES6</a> <a href="/tags/HTML/" style="font-size: 15px;">HTML</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/MongoDB/" style="font-size: 15px;">MongoDB</a> <a href="/tags/React/" style="font-size: 15px;">React</a> <a href="/tags/Riot-js/" style="font-size: 15px;">Riot.js</a> <a href="/tags/Parcel/" style="font-size: 15px;">Parcel</a> <a href="/tags/前端工程化/" style="font-size: 15px;">前端工程化</a> <a href="/tags/Vue-组件化/" style="font-size: 15px;">Vue 组件化</a> <a href="/tags/Vue/" style="font-size: 15px;">Vue</a> <a href="/tags/开发经验/" style="font-size: 15px;">开发经验</a> <a href="/tags/音乐/" style="font-size: 15px;">音乐</a> <a href="/tags/浏览器/" style="font-size: 15px;">浏览器</a> <a href="/tags/面试/" style="font-size: 15px;">面试</a> <a href="/tags/Javascript/" style="font-size: 15px;">Javascript</a> <a href="/tags/JS/" style="font-size: 15px;">JS</a> <a href="/tags/产品/" style="font-size: 15px;">产品</a> <a href="/tags/学习/" style="font-size: 15px;">学习</a> <a href="/tags/转载/" style="font-size: 15px;">转载</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/10/09/【产品总结】Makeblock-慧编程扩展设计器预设模版功能/">【产品总结】Makeblock 慧编程扩展设计器预设模版功能</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/30/MakeBlock香港书展一日之旅/">MakeBlock香港书展一日之旅</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/25/一加6T氢OS系统手动开启通话录音权限/">一加6T氢OS系统手动开启通话录音权限</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/16/再观《机器人总动员》有感/">再观《机器人总动员》有感</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/16/【转】如何设计出一份好的调查问卷？/">【转】如何设计出一份好的调查问卷？</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/08/纽约再见/">纽约再见</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/02/08/React踩坑记/">React踩坑记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/01/MongoDB学习/">MongoDB学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/20/前端面试题/">前端面试题</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/21/Vue踩坑记/">Vue踩坑记</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://lizhenzhu.com/" title="交互师小朱" target="_blank">交互师小朱</a><ul></ul><a href="http://shuaiyuan.work" title="欢迎招租和互换" target="_blank">欢迎招租和互换</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">夜郎西.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
