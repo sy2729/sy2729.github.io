@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-14T15:17:53.150Z</updated>
+  <updated>2019-12-22T14:04:30.819Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从跬步到千里——《产品方法论节选》感悟</title>
+    <link href="http://yoursite.com/2019/12/22/%E4%BB%8E%E8%B7%AC%E6%AD%A5%E5%88%B0%E5%8D%83%E9%87%8C%E2%80%94%E2%80%94%E3%80%8A%E4%BA%A7%E5%93%81%E6%96%B9%E6%B3%95%E8%AE%BA%E8%8A%82%E9%80%89%E3%80%8B%E6%84%9F%E6%82%9F/"/>
+    <id>http://yoursite.com/2019/12/22/从跬步到千里——《产品方法论节选》感悟/</id>
+    <published>2019-12-22T14:04:30.000Z</published>
+    <updated>2019-12-22T14:04:30.819Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>俞军老师出了一本新书，叫做《产品方法论》。</p><p>前几天一个公众号caoz的梦呓分享了其中一小部分节选。我有幸看到了这篇文章，惊为天人，醍醐灌顶。</p><p>和许多指导工作的产品书籍和工作书籍在细节方面的指导相比，俞军老师用醇厚朴实的语言透彻地点评了整个产品经理的行业，鞭辟入里。其对于产品究竟如何以产品和公司战略发展配合的角度评价自己的价值和成长，如何正确合理地规划自己的职业生涯提出了非常深刻的点评。</p><p>我自己在美国时对比中外，观察到的一个非常有趣的现象是：为何国内的互联网企业喜欢大张旗鼓地招聘大量应届生作为产品经理，而国外的企业中，一般此类的岗位多是由以下几类人员晋升（转行）担任：要么是在行业中沉淀颇深，对市场和用户进行长期观察和分析的市场类从业人员；要么是和互联网产品迭代流程高度相关的其余工种，比如 用户体验设计师 / 技术开发人员 / 测试 / 运营 人员等；</p><p>在过去几年的风口中，特别是在共享经济大火的那几年，国内大厂小厂大张旗鼓招聘产品的盛况让这个工种迎来了春天和爆发期。回想起来，我难免单纯地认为仅是行业的野蛮生长降低了这个岗位门槛要求。</p><p>我也试图从网络和朋友身边寻找真正对这个现象的合理解释以及背后反映的某种人才市场规律；无奈大部分人可能只会认为“既然招，那就上”，并不关心这个现象到底是如何造成的。我并非是杠精，只是在我临近毕业，面临一份开发、一份交互设计、以及一份产品助理岗位的offer时，仅凭我对这个岗位有限的理解，这个问题的答案或许能让我面对企业大饼和行业的“蓝海”冷静一下，好好抉择。</p><p>而幸运的是， 我终于在俞军老师这里看到了一个较为全面而令人信服的答案：</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/12/22/c0a6a1f0-24c3-11ea-86da-f34650063413.png" alt="image.png"></p><p>俞军从企业人才培训和薪酬、中国人才的现状、产品工作的要求等角度剖析，解释了这一现状。其中提到的“平台匹配度”、“替换成本”、“时间窗口”等问题，对于产品来说是十分严重和明显的。对于招聘一个成熟的设计师，她的替换成本可能只是对于设计风格，工作流程的适应；对于工程师，可能只是代码规范、使用框架的适应；而对于一个产品经理，特别是不是同一领域的产品经理，耗费的是大量重新深入业务和行业的学习时间，而且还不容易消除上一份工作在认知上给这位产品可能造成的桎梏。</p><p>关于中国教育模式下导致的独立思考能力有所欠缺的看法，我是认同的（当然我也认为中国基础教育的扎实程度是欧美的公立教育难以追赶的）。西方的教育的确较为强调思考为什么和执行能力，这种能力本身也是对产品的基本要求。所以，除了欧美本身的互联网发展渐趋平稳之外，从这个角度看，西方接受过高等教育的民众在职场上独立思考能力的大体趋同无法体现出个人潜力的差异。因此，“思维”作为一种优质但并不匮乏的素养，与其耗费更多资源去筛选优质产品人才，等待其在其余工种积累踏实的技能和丰富的阅历之后再参与产品工作，的确是一件较为顺理成章的事情。</p><p>此外，我还有些小的见解，作为抛砖引玉之见：</p><p>中国的互联网疯狂生长，现实来看，一定程度上缓和了中国正在加剧的阶层固化。高待遇高回报，甚至自发创业实现的财务自由，都给众多从事产品行业的人们带来了过于美好的幻想。大量优质人才涌入的互联网，就像十年前的金融，十几年前的快消和房地产。人才促进行业，行业吸纳人才，这样的双向作用在一定程度之内是良性的。但从目前的秋招以及互联网裁员情况来看，已经有了一定的泡沫和内卷化。在5G带来的冲击下，未来的前景如何，还有待观察。</p><p>对这篇文章有兴趣的朋友，可以前往此处阅读本文章：产品经理的选拔与成长-《俞军产品方法论》节选</p><p>真希望自己能早点看到这段话。进一步了解企业背后的用人心态，可以帮助产品不断摆正在职场上的定位和发展，有一个相对合理的未来规划。</p><p>俞军老师提到，一个产品新手，在“经过最初的打基础阶段后，如果想继续进阶变成熟练产品经理，最好多接触一些不同的挑战，如果有机会，可以发展这六个方面的能力:</p><p>从0到1</p><p>做深做透</p><p>做宽做杂</p><p>大用户量</p><p>商业闭环</p><p>团队建设</p><p>”</p><p>从0到1目前我是没有机会接触了。我所做的扩展设计器在入职接手时便已经具备了初期的产品形态，现在处在一个成长期。</p><p>如何在生活中留心好的设计、设计背后的目的以及思考设计所解决的问题，是我接下来的一个积累方向。在繁忙的生活中，可能会偶尔观察到让人灵光一现的产品细节，无奈琐碎的事务会让人很快忘记掉这些优秀的设计。缺乏对于优秀思路的整理和总结，在做产品设计时需要花费大量的时间进行调研和竞品分析。无疑会拖累迭代的速度以及增加成本。</p><p>今后我也会针对日常生活中所观察到的优秀设计开设专题进行记录和整理，希望能够将这些优秀的思路内化，补充自己的思维模式。</p><p>至于俞军老师这本新书，在看那篇节选的时候已经下了订单，12月底才会开始出货。真心推荐。“北俞军，南小龙”，果然不是浪得虚名。</p><p>敬请期待。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="产品" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用户体验设计师的破茧之术</title>
+    <link href="http://yoursite.com/2019/11/16/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E5%B8%88%E7%9A%84%E7%A0%B4%E8%8C%A7%E4%B9%8B%E6%9C%AF/"/>
+    <id>http://yoursite.com/2019/11/16/用户体验设计师的破茧之术/</id>
+    <published>2019-11-16T09:21:17.000Z</published>
+    <updated>2019-11-16T09:21:17.892Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><blockquote><p>《破茧成蝶——用户体验设计师的成长之路》这本书，模糊了 UED 和产品理想的边界。</p></blockquote><p>鉴于用户体验设计岗位初期只存在于“人力资源充沛”，财大气粗的大厂，许多人对于用户体验设计的职能存在较多的疑惑。特别是结合这本书的出版年代——2014年，那个“用户体验”刚兴起不久的时候，在产品经理和UI设计师之间，用户体验设计师到底是怎样一种存在呢？相信这本书的作者希望通过这本书一是帮助更多的是用户体验设计师避免锁死在空谈“体验”的岗位，主动地配合产品设计的整个流程，“切中要害”地提升体验；二也是更新大众对于这个职位更多的认知，特别当这本书的目标读者同时瞄准了与用户体验设计师协作的其余工作者时。</p><p>作者虽然是从用户体验设计师的角度出发去理解产品功能需求上的设计配合，但是从相反的角度也可以认为<strong>产品经理能够看到用户体验设计师是如何去配合产品，对产品经理交付的需求文档质量有怎样的要求</strong>，那么产品该如何主动减少配合中存在的阻碍，使两个工种的协作发挥到极致。此外，在创业公司、小公司或者小项目组中，产品经理通常需要肩负部分用户体验设计师的职责和工作，需求文档配合原型图，一定程度上也需要考虑交互。这个时候，UI 和产品各进一步，共同承担“体验优化”的任务。</p><p>对于“用户体验设计师”这个概念，个人认为交互设计师是用户体验设计师的雏形。只有达到一定的高度以后才能有资格和底气称自己是在为体验而设计，并且是对产品价值提升有益的体验优化设计。</p><h3 id="设计师参与需求分析的主观能动性"><a href="#设计师参与需求分析的主观能动性" class="headerlink" title="设计师参与需求分析的主观能动性"></a>设计师参与需求分析的主观能动性</h3><p>整本书最亮点的核心观点是，用户体验设计师如何打破原有的工作流程，即：</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/11/16/3b363450-0852-11ea-8294-bfebea919e50.png" alt="image.png"></p><p>转变为全程对于用户真实需求、产品定位、产品目标以及产品需求的关注。</p><p>书中提到设计师应该在前期的主动参与用户调研或者调研结果的讨论，一同参与产品经理的需求分析过程。原因很简单，通常情况下，产品经理通过前期大量的调研和市场研究所分析汇总出了需求文档（甚至在很多公司，现状是需求通常来自领导要求，来自产品经理拍脑门，来自竞品抄袭。别不信，去看看脉脉上对于产品经理的吐槽就知道了），交互设计师仅仅只要按照这篇文档或者产品所提供的简易原型图进行设计，就能产出交付 UI 的交互图。这中间的断层和信息不对称是极大的。在需求是通过科学方法和合理的操作得出的情况下，这种断层顶多造成设计的失误和理想化偏差，尚可通过渐进地迭代进行优化校正；倘若在需求都是有极大“问题”的情况下，这种断层则会导致产出的设计可能只是毫无价值的敷衍之物。</p><p>另外，考虑需求之时，产品通常从商业、业务角度出发，设计师从用户、体验出发，开发从技术角度出发。三者之间必然需要一种平衡。因此，对于设计师来说，有条件有机会的情况下，尽量参与前期产品工作，如下：</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/11/16/3f622ac0-0852-11ea-8294-bfebea919e50.png" alt="image.png"></p><p>这样才能对于拿到的需求文档的价值和内容了然于胸，做出优秀的设计方案。</p><p>那么在现实的情况下，由于公司资源，时间限制等原因，可能设计师直接就拿到需求文档了，这个时候也是需要主动去做需求分析——回归设计目标：</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/11/16/42805ab0-0852-11ea-8294-bfebea919e50.png" alt="image.png"></p><h3 id="看竞品背后的深思熟虑"><a href="#看竞品背后的深思熟虑" class="headerlink" title="看竞品背后的深思熟虑"></a>看竞品背后的深思熟虑</h3><p>书中另外一个我认为非常有价值的观点是：参考竞品时如何从设计反推产品需求和定位，再进行产品的差异化定位比较，得出自身产品的真正设计需求。</p><p>这一点实际上对产品经理的工作非常有帮助。举例来说，在做公司的一个注册登录页面时，参考了不少的 K12 教育公司的注册登录界面，发现这些界面上的图片在内容和风格上有多种表现，比如手绘，实拍，人物为主角、物品为主角、场景为主角、单一的物体、多个物体环绕。结合这些公司提供的产品服务的种类，定位以及目标人群，不难推导其采用这些图片的真正原因。比如 VIPKID 的图片为一个孩子带着耳机和麦克，旁边坐着一位外教。这样的实拍场景非常理想地向每一个用户解释了产品的属性、面向对象、服务内容、以及使用场景。</p><p>那么反观我这次负责的产品有怎样的属性和价值，我的产品和这个产业相似但是业务不同的产品是否需要采用类似的设计，从这个角度去思考，对图片内容和风格有怎样的要求就更容易得出令人信服的结论。</p><p>以上两点是本书中和产品经理工作重叠最多的地方。其余介绍的主要是交互设计师如何将需求转化为界面（这一点对于没有交互设计师资源的项目组来说，其实也是在教产品如何画原型图），交互设计的一些规范和原则，以及如何进行交互评审（类比产品需求评审），如何跟进设计（类比产品跟进整个项目），交互设计师的自我素养等内容。</p><p>有人会觉得交互设计师也太累了吧，把产品的活儿都给干了。然而我认为这是一名职场人士对自己的负责。</p><p>互联网由于极快地迭代速度和资本涌入，再加上现代社会职位分工细作的趋势，导致了用户体验设计职位的正式出现。而在此之前，可能的确是某些对细节有“无上追求”的产品经理在做这一部分事情的。分工虽然提高了专注度和精准度，但是必然带来沟通效率的提高，如果把自己固化在“承接需求，产出设计”的岗位上，这种消极的工作对接方式必然带来信息不对称，沟通效率低下的问题。</p><p>其实本书意在扭转这种思想，鼓励设计师如何从一位平庸的设计师走向优秀，培养全局视野。其实对于很多有产品思维的设计师来说，如此的工作流程为其将来转产品岗位打下了坚实的基础。</p><p>此书对于产品经理的启示或许在于，由于过分关注KPI和业务，导致在工作对接上并未考虑设计师如何在理解业务的基础上进行设计，那么应该如何为他们多一些考虑，使大家都能朝着共同的产品目标奋斗。其实很多设计师喜欢沉浸在自己的艺术世界中愿意当一名手艺人，需要做到完美的协作也需要两人达成共识。</p><p>对我的启发来说：由于本身有过用户体验设计的实习经历甚至开发的经历，我非常理解作者描述的那种“等待需求，无所事事”的状态，从一个被动者到主动者中间的转变也是挺痛苦的。如何“破茧”？实则就是要对产品拥有主人翁意识而不再把自己当成一个产线上的螺丝钉。</p><p>和设计师不一样的是，设计师一开始可以是“被动的”手艺人状态，只去关注细节和局部的设计实现。然而产品经理则从一开始就需要培养这种主人翁意识，否则连门都入不了……在最近的工作中，自己也越来越意识到需要有这样的意识，才能推动整个项目的运行。这本书具体给我带来的思考是：</p><ul><li>在我司 / 项目 资源限制的情况下，如何在需求中尽可能地结合前期调研和分析的背景，让设计师意识到产品的定位和真实需求（或者私下提前和设计沟通）；</li><li>在没有设计师的情况下，如何肩负起交互的职责；</li><li>看设计方案如何反推产品</li><li>如何和设计师多说话，主动传递产品背景信息给她（如果她并不主动的话）。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="产品" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81/"/>
+    
+      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>【产品总结】Makeblock 慧编程扩展设计器预设模版功能</title>
@@ -94,7 +146,7 @@
     <published>2019-07-16T15:58:59.000Z</published>
     <updated>2019-07-20T12:17:44.305Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>这部电影看过很多遍了，高中的时候一遍，后来大学看过两遍，现在公司组织管培生去看电影，又是一遍。</p>    <div id="aplayer-lCbGvgFE" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2005760" data-server="netease" data-type="song" data-mode="circulation" " data-autoplay="true" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div><p>第一次看的那种感动仍然还在，机器和机器之间单纯直接的情感反衬出对环境的人文反思，对人类世界麻木的无情嘲讽，好在影片是少儿向，寓意在于给人美好的希望和教育意义，并没有揭示仅凭一株植物就断定地球生态环境的恢复，可以居住，并贸然带领所有仅存的人类回到地球的行为是多么不合情理，也没有着重篇幅暗示人类回到地球之后面对满目疮痍的地球可能需要付出怎样努力才能开疆拓土。但是轻松的剧情之下依然潜伏着很多可怕的秘密。</p><p><img src="http://thelibertycaucus.com/wp-content/uploads/2014/06/DI-Walle-1-DI-to-L10.jpg" alt="瓦力和伊娃"></p><p>船长在和机器人代理舵手争辩时，偶然一眼扫见历代船长和舵手的合影。这是一个意味深长的镜头，历代合影中，船长身后的机器人舵手随着每一代船长的传承距离船长的越来越近，到最后几乎贴着船长的后背 ，占据照片的一半的篇幅，大有取代人类船长之势。这其实早为舵手的叛变埋下了伏笔。那就是机器人随时时间的流逝和科技的发展逐渐有了自己的意识，并且想要开始制衡人类。</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/07/20/b483e0b0-aacd-11e9-99b9-492b08b233ee.jpg" alt="肥胖如猪的船长"></p><p>影片中的大多数机器人都是只会按照规章制度执行指令的机器——乍一看我们会以为是这样，然而影片结尾处面对伊娃和瓦利恋情的公开，一大堆飞船上的机器人“战友”急匆匆冲过来又赶紧不当电灯泡躲起来，这一幕已经体现了机器人很大程度上实际拥有人类的各种微妙的情绪和思想。</p><p>而我实现无法想象拥有如此智能的机器人，在拥有强大功能和生命力的同时（连最低级的垃圾处理机器人瓦力都可以通过太阳能为自己无限续命，通过更换零件实现永生），为什么需要向人类臣服。而此时的人类在飞船上已然成为了被豢养的机器人的”宠物猪“，终日沉浸在机器所营造的美好幻梦之中，穿着统一的制服，永远喝着一样的饮料，过着古人一般日出而作，日落而息的生活（然而这个日的规则和时间却由机器所掌控），看着眼前虚拟的屏幕和其他人类社交（却无法感知身边活生生的同胞），肥胖得只能通过椅子行动——甚至有可能从出生到老死终日未曾离开过自己的椅子。这样看来，人类面对机器人实则未有半分胜算，而最后却只因船长关掉舵手的开关而取得胜利，未免太过牵强。而我认为舵手对船长回归地球意图的反抗断然不仅是因为登船之初总统所下达的不得返回地球的秘密指令，而或许是其早已产生智能，想通过继续将人类禁锢在飞船之上，而达到另一些不为人所知的目的。</p><p>整部影片没有显示出人类的任何智慧。比如制造机器人的科学家在哪儿？人类看似拥有如此的高科技，可是普通的人民却如此臃肿，娱乐至死。那么是什么资本让人类亲手毁灭了地球，进入太空之后却仍旧能够不用付出任何代价享受这样的生活？电影对此没有任何交代。想必是考虑电影的风格，对于我等阴谋说的剧情不想过多交代否则影响这部面向小孩的电影美好性。但是个人认为，作为一个成人观看这部电影，是很有必要思考这些可能的“阴谋”的。</p><p>整部影片的反讽意味明确，人类过分依赖科技，导致自身智慧甚至体态的退化，出现反向进化的趋势；而另一头，日趋智能的机器人却在服侍、服务人类的时候碰撞出了爱情和人性。看似荒诞的情节实际背后充满对人类未来的担忧。</p><p>说回现在。公司所做的mBot的长相与剧中的Wall-E有几分相似，可想而知Jasen在创建公司初期怀揣的梦想就是能够有一天至少还原出Wall-E这类级别机器人的。但目前来看，我们的年代所掌握的技术离这类机器人还有不短距离。</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/07/20/d007cae0-aacd-11e9-99b9-492b08b233ee.jpg" alt="Wall-E"></p><p>总之，这部剧让我明白，人类不过是众多生物中平凡的一类。如果以为科技的发展能让我们高枕无忧什么也不用做，那只会更快地走向灭亡和被淘汰。个人比较悲观，所以也会有这种危机感，很多人看到这部电影所讲述的机器人的美好，我只看到这部电影中人类的悲惨命运，真的回到地球就能幸福快了吗，已经产生智慧的机器人，真的能与人和平共处吗？</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>这部电影看过很多遍了，高中的时候一遍，后来大学看过两遍，现在公司组织管培生去看电影，又是一遍。</p>    <div id="aplayer-ufjgqaHV" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2005760" data-server="netease" data-type="song" data-mode="circulation" " data-autoplay="true" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div><p>第一次看的那种感动仍然还在，机器和机器之间单纯直接的情感反衬出对环境的人文反思，对人类世界麻木的无情嘲讽，好在影片是少儿向，寓意在于给人美好的希望和教育意义，并没有揭示仅凭一株植物就断定地球生态环境的恢复，可以居住，并贸然带领所有仅存的人类回到地球的行为是多么不合情理，也没有着重篇幅暗示人类回到地球之后面对满目疮痍的地球可能需要付出怎样努力才能开疆拓土。但是轻松的剧情之下依然潜伏着很多可怕的秘密。</p><p><img src="http://thelibertycaucus.com/wp-content/uploads/2014/06/DI-Walle-1-DI-to-L10.jpg" alt="瓦力和伊娃"></p><p>船长在和机器人代理舵手争辩时，偶然一眼扫见历代船长和舵手的合影。这是一个意味深长的镜头，历代合影中，船长身后的机器人舵手随着每一代船长的传承距离船长的越来越近，到最后几乎贴着船长的后背 ，占据照片的一半的篇幅，大有取代人类船长之势。这其实早为舵手的叛变埋下了伏笔。那就是机器人随时时间的流逝和科技的发展逐渐有了自己的意识，并且想要开始制衡人类。</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/07/20/b483e0b0-aacd-11e9-99b9-492b08b233ee.jpg" alt="肥胖如猪的船长"></p><p>影片中的大多数机器人都是只会按照规章制度执行指令的机器——乍一看我们会以为是这样，然而影片结尾处面对伊娃和瓦利恋情的公开，一大堆飞船上的机器人“战友”急匆匆冲过来又赶紧不当电灯泡躲起来，这一幕已经体现了机器人很大程度上实际拥有人类的各种微妙的情绪和思想。</p><p>而我实现无法想象拥有如此智能的机器人，在拥有强大功能和生命力的同时（连最低级的垃圾处理机器人瓦力都可以通过太阳能为自己无限续命，通过更换零件实现永生），为什么需要向人类臣服。而此时的人类在飞船上已然成为了被豢养的机器人的”宠物猪“，终日沉浸在机器所营造的美好幻梦之中，穿着统一的制服，永远喝着一样的饮料，过着古人一般日出而作，日落而息的生活（然而这个日的规则和时间却由机器所掌控），看着眼前虚拟的屏幕和其他人类社交（却无法感知身边活生生的同胞），肥胖得只能通过椅子行动——甚至有可能从出生到老死终日未曾离开过自己的椅子。这样看来，人类面对机器人实则未有半分胜算，而最后却只因船长关掉舵手的开关而取得胜利，未免太过牵强。而我认为舵手对船长回归地球意图的反抗断然不仅是因为登船之初总统所下达的不得返回地球的秘密指令，而或许是其早已产生智能，想通过继续将人类禁锢在飞船之上，而达到另一些不为人所知的目的。</p><p>整部影片没有显示出人类的任何智慧。比如制造机器人的科学家在哪儿？人类看似拥有如此的高科技，可是普通的人民却如此臃肿，娱乐至死。那么是什么资本让人类亲手毁灭了地球，进入太空之后却仍旧能够不用付出任何代价享受这样的生活？电影对此没有任何交代。想必是考虑电影的风格，对于我等阴谋说的剧情不想过多交代否则影响这部面向小孩的电影美好性。但是个人认为，作为一个成人观看这部电影，是很有必要思考这些可能的“阴谋”的。</p><p>整部影片的反讽意味明确，人类过分依赖科技，导致自身智慧甚至体态的退化，出现反向进化的趋势；而另一头，日趋智能的机器人却在服侍、服务人类的时候碰撞出了爱情和人性。看似荒诞的情节实际背后充满对人类未来的担忧。</p><p>说回现在。公司所做的mBot的长相与剧中的Wall-E有几分相似，可想而知Jasen在创建公司初期怀揣的梦想就是能够有一天至少还原出Wall-E这类级别机器人的。但目前来看，我们的年代所掌握的技术离这类机器人还有不短距离。</p><p><img src="https://shuai-hexo-blog-image.oss-cn-shenzhen.aliyuncs.com/hexo-client/2019/07/20/d007cae0-aacd-11e9-99b9-492b08b233ee.jpg" alt="Wall-E"></p><p>总之，这部剧让我明白，人类不过是众多生物中平凡的一类。如果以为科技的发展能让我们高枕无忧什么也不用做，那只会更快地走向灭亡和被淘汰。个人比较悲观，所以也会有这种危机感，很多人看到这部电影所讲述的机器人的美好，我只看到这部电影中人类的悲惨命运，真的回到地球就能幸福快了吗，已经产生智慧的机器人，真的能与人和平共处吗？</p>]]></content>
     
     <summary type="html">
     
@@ -146,7 +198,7 @@
     <published>2019-06-08T02:59:11.000Z</published>
     <updated>2019-07-20T15:11:18.629Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>    <div id="aplayer-xWWvephd" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="16328033" data-server="netease" data-type="song" data-mode="circulation" " data-autoplay="true" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div><p>他们说纽约是一个非常有包容性的城市，各种文化、美食、民族、阶层，无不在这里有自己一方净土。可是我自己仍然觉得这个城市太快，太碎，太不符合自己对于安居乐业的居住地的想象。</p><p>终于收拾好了包裹，向居住了一年的Ubry小区道别。</p><p>当初搬过来的时候憧憬着自己之后如何一个人在这美好的小区学习，奋斗，升职，加薪。现在回想，觉得有些天真了，没有经历大风大浪的避世隐居，是禁不住世间诱惑，难关，酸甜苦辣的考验的。</p><p>我可能会或不会在将来怀念这一段孤独而痛苦的时光，但一定会感谢他渐渐帮我拨开迷雾，指引自己矫正之前偏离的轨迹。</p><p>再见，纽约。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>    <div id="aplayer-ixhBZefU" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="16328033" data-server="netease" data-type="song" data-mode="circulation" " data-autoplay="true" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div><p>他们说纽约是一个非常有包容性的城市，各种文化、美食、民族、阶层，无不在这里有自己一方净土。可是我自己仍然觉得这个城市太快，太碎，太不符合自己对于安居乐业的居住地的想象。</p><p>终于收拾好了包裹，向居住了一年的Ubry小区道别。</p><p>当初搬过来的时候憧憬着自己之后如何一个人在这美好的小区学习，奋斗，升职，加薪。现在回想，觉得有些天真了，没有经历大风大浪的避世隐居，是禁不住世间诱惑，难关，酸甜苦辣的考验的。</p><p>我可能会或不会在将来怀念这一段孤独而痛苦的时光，但一定会感谢他渐渐帮我拨开迷雾，指引自己矫正之前偏离的轨迹。</p><p>再见，纽约。</p>]]></content>
     
     <summary type="html">
     
@@ -469,56 +521,6 @@
     
     
       <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>canvas画板项目知识点总结</title>
-    <link href="http://yoursite.com/2018/03/25/canvas%E7%94%BB%E6%9D%BF%E9%A1%B9%E7%9B%AE%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2018/03/25/canvas画板项目知识点总结/</id>
-    <published>2018-03-25T04:11:33.000Z</published>
-    <updated>2019-07-20T11:53:00.078Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最近学习canvas，用其做了一个画板。画板支持画画，擦除，选色，以及保存导出等功能。最主要是通过这一个项目熟悉了canvas的API， 并且由于需要做移动触屏上的支持，所以对移动端的用户事件，移动端事件和PC端事件的区别有了更多的了解。这是项目地址： <a href="https://sy2729.github.io/canvas-draw/." target="_blank" rel="noopener">Canvas-draw</a></p><p>这个项目大概涉及到的知识点有：</p><ol><li>画板的鼠标事件：</li></ol><p>(1)按下鼠标；<br>    <code>document.onmousedown</code></p><p>(2)动鼠标；<br>    <code>document.onmousemove</code></p><p>(3)松开鼠标；<br>    <code>document.onmouseup</code></p><ol><li><p>如何通过一个变量作为开关触发和关闭点击状态，实现鼠标移动时作画；</p></li><li><p>用div作画的缺陷，浏览器无法实时非常快速的监听事件，有延迟；</p></li><li><p>Canvas的缩放方式为等比缩放</p></li><li><p>API</p> <figure class="highlight plain"><figcaption><span>ctx </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">ctx.strokeStyle;</span><br><span class="line">ctx.strokeRect;</span><br><span class="line"></span><br><span class="line">ctx.fillStyle;</span><br><span class="line">ctx.fillRect;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ctx.clearRect;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ctx.beginPath;</span><br><span class="line">ctx.moveTo</span><br><span class="line">ctx.lineTo</span><br><span class="line">ctx.lineWidth</span><br><span class="line">ctx.fill</span><br><span class="line">//会自动闭合</span><br><span class="line">ctx.closePath</span><br><span class="line"></span><br><span class="line">ctx.beginPath</span><br><span class="line">ctx.arc</span><br><span class="line">ctx.fill</span><br></pre></td></tr></table></figure></li><li><p>常见的一个bug，很多人忽略了鼠标事件<code>clientX</code>和<code>clientY</code>所获取的坐标是相对于viewport（html）的坐标，canvas默认贴近viewport左上角，所以鼠标在canvas上的坐标就是在viewport上的坐标。但倘若一旦改变了canvas的边距，就会产生bug</p></li></ol><ol><li>获取页面高度宽度API<br><code>width: document.documentElement.clientWidth;</code></li></ol><p><code>height: document.documentElement.clientHeight</code></p><p><code>document.documentElement.clientWidth</code> 这个 API 的作用是获取document宽度，也就是viewport的宽度</p><ol><li><p>移动端touch事件替代mouse事件：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ontouchmove</span><br><span class="line">ontouchend</span><br></pre></td></tr></table></figure></li><li><p>根据设备支不支持touch事件来决定监不监听touch事件 – 特性检测</p></li></ol><p><code>div.ontouchstart = undefined</code> 表示不支持touch事件</p><p><code>div.ontouchstart = null</code> 表示支持touch事件</p><ol><li><p>touches支持多点触控，将所有触控点收集起来存放在touches中<br>所以移动端获取触控点的X、Y坐标时的API是<br><code>e.touches[0].clientX</code></p></li><li><p>防止手机端出现滚动条或者页面在画画时滑动的办法：<br>让canvas绝对定位；</p></li><li><p>canvas 保存画布为图片的方式是给一个a标签然后用canvas的toDataURL()API然后将canvas的整体存为一个字符串作为a标签的链接，紧接着再下载。</p></li><li><p>用局域网进行快速调试：查看电脑端网络TCP／IP地址中的IPv4地址。</p></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="开发经验" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>简易NavBook导航网站实现及知识点总结</title>
-    <link href="http://yoursite.com/2018/03/22/%E7%AE%80%E6%98%93NavBook%E5%AF%BC%E8%88%AA%E7%BD%91%E7%AB%99%E5%AE%9E%E7%8E%B0%E5%8F%8A%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
-    <id>http://yoursite.com/2018/03/22/简易NavBook导航网站实现及知识点总结/</id>
-    <published>2018-03-22T05:18:16.000Z</published>
-    <updated>2019-07-20T11:53:00.079Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>最近做的小项目是一个导航网站，用户可以自定义编辑快捷键对应的网址- <a href="https://sy2729.github.io/navbook/" target="_blank" rel="noopener">Navbook</a>。实现过程中大概运用到的知识点有：</p><p>1.100vh 指屏幕（视口）高度;</p><p>2.浏览器访问页面icon的方式是访问网址根目录下的favicon.ico;例如www.qq.com/favicon.ico</p><p>3.403 forbidden</p><ul><li>如何通过循环不断生成相互嵌套的div</li><li>如何监听键盘事件并通过键盘址打开hash中对应的网址；</li><li>如何点击对应键盘中的按钮修改hash中对应键盘储存的网址；</li><li>如何利用localStorage存储用户设置；</li><li>如何询问用户并获取用户输入；</li><li>如何获取各个网站的fivcon；</li><li>如何捕获错误事件，并为之准备一个备用fivcon</li><li>如何更好的封装函数</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="开发经验" scheme="http://yoursite.com/tags/%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C/"/>
     
   </entry>
   
